@@ -1,12 +1,8 @@
 const View = require('./ttt-view');
 const Game = require('./game');
-window.Game = Game;
-window.View = View;
-
-
- window.$game = new Game();
- window.$view = new View($game);
 
   $(() => {
-
+    const game = new Game();
+    const $el = $('.ttt');
+    const $view = new View(game, $el)
   });
