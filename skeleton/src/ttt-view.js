@@ -5,9 +5,22 @@ class View {
     this.setupBoard();
   }
 
-  bindEvents() {}
+  bindEvents() {
+    const $li = $('li');
+    const $ul = $('ul')
+    const toggleClass = (e) => {
+      $li.toggleClass('x o');
+      this.game.playMove([1,1]);
+    }
+    $('ul').on('click', this.makeMove);
+  }
 
-  makeMove($square) {}
+  makeMove($square) {
+    debugger
+    if (this.game.currentPlayer === 'x'){
+    $square.text('x')}
+    else {$square.text('o')}
+  }
 
   setupBoard() {
     const $ul = $('<ul>');

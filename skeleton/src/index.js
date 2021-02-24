@@ -4,5 +4,6 @@ const Game = require('./game');
   $(() => {
     const game = new Game();
     const $el = $('.ttt');
-    const $view = new View(game, $el)
+    const $view = new View(game, $el);
+    $view.bindEvents();
   });
