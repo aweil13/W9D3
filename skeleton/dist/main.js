@@ -35,7 +35,7 @@ eval("const Board = __webpack_require__(/*! ./board */ \"./src/board.js\");\ncon
   \**********************/
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("const View = __webpack_require__(/*! ./ttt-view */ \"./src/ttt-view.js\");\nconst Game = __webpack_require__(/*! ./game */ \"./src/game.js\");\nwindow.Game = Game;\nwindow.View = View;\n\nconst sel = 'lord';\n\nconst $game = new Game();\nconst $view = new View($game);\n\n  $(() => {\n\n  });\n\n\n//# sourceURL=webpack:///./src/index.js?");
+eval("const View = __webpack_require__(/*! ./ttt-view */ \"./src/ttt-view.js\");\nconst Game = __webpack_require__(/*! ./game */ \"./src/game.js\");\nwindow.Game = Game;\nwindow.View = View;\n\n\n window.$game = new Game();\n window.$view = new View($game);\n\n  $(() => {\n\n  });\n\n\n//# sourceURL=webpack:///./src/index.js?");
 
 /***/ }),
 
